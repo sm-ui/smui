@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>smui 测试</title>
+</head>
+<body>
+<script type="text/javascript" src="./resource/vendor/lib/mod.js"></script>
+<script type="text/javascript" src="./resource/vendor/lib/vue.js"></script>
+<div id="main">
+    <app></app>
+</div>
+
+<script type="text/javascript">
+    require('dep/main');
+    var smui = require('dep/smui/index');
+    var App = require('dep/smui/demo/src/App.vue');
+    new Vue({
+        el: '#main',
+        components: {App: App}
+    })
+</script>
+</body>
+</html>
